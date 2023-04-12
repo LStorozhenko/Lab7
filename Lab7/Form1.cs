@@ -172,18 +172,5 @@ namespace Lab7
             richTextBox1.SelectionIndent = psd.PageSettings.Margins.Top;
             richTextBox1.SelectionLength = 0;
         }
-        float currentLineSpacing = 0f;
-        int currentParagraphIndent = 0;
-        private void абзацToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (richTextBox1.SelectionLength>0)
-            {
-                int currentParagraphIndex = richTextBox1.GetParagraphIndex(richTextBox1.SelectionStart);
-                int currentParagraphLength = richTextBox1.GetParagraphLength(currentParagraphIndex);
-                richTextBox1.Select(currentParagraphIndex, currentParagraphLength);
-
-            }
-            int lenght = endIndex - startIndex;
-        }
     }
 }
